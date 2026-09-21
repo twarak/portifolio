@@ -1,0 +1,537 @@
+/* ------------------ Google Font ------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+/* ------------------ Global Reset ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #202020;
+  color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+  color: #e5e5e5;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #fed700;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* --------------------------- Header --------------------------- */
+.header-area {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #202020;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.logo img.signature {
+  width: 90px;
+  margin-right: 10px;
+}
+
+.logo .fa-bolt {
+  color: #fed700;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar a {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: #fed700;
+}
+
+.menu_icon {
+  display: none;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* --------------------------- Hero / Home --------------------------- */
+.FirstElement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 0;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.profile-photo {
+  width: 280px;
+  /* Make width & height equal */
+  height: 360px;
+
+  border-radius: 70%;
+  /* Perfect circle */
+  overflow: hidden;
+
+  border: 7px solid #484845;
+  /* Outline color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.profile-photo: img {
+  transform: scale(1.05);
+}
+
+.profile-text {
+  max-width: 600px;
+}
+
+.profile-text h5 {
+  color: #bbb;
+  font-size: 15px;
+}
+
+.profile-text h1 {
+  color: #fed700;
+  font-size: 2rem;
+  margin: 5px 0 8px 0;
+}
+
+.profile-text p {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 5px;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
+  background-color: #333;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #fed700;
+  color: #202020;
+  border-color: #fed700;
+}
+
+.btn.active {
+  background-color: #fed700;
+  color: #202020;
+  border-color: #fed700;
+}
+
+.social {
+  margin-top: 10px;
+}
+
+.social a {
+  margin-right: 12px;
+  font-size: 20px;
+  color: #e5e5e5;
+  transition: 0.4s;
+}
+
+.social a:hover {
+  color: #fed700;
+  transform: rotate(360deg);
+}
+
+/* --------------------------- About --------------------------- */
+.about-area {
+  padding: 100px 0;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-content {
+  flex: 1;
+  min-width: 260px;
+}
+
+.about-content h4 {
+  font-size: 32px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  color: #ddd;
+}
+
+.about-content ul li {
+  margin-bottom: 12px;
+  list-style-type: disc;
+  margin-left: 18px;
+}
+
+.about-skills {
+  flex: 1;
+  min-width: 260px;
+}
+
+.about-skills ul li {
+  border-bottom: 1px dashed #666;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.about-skills ul li:last-child {
+  border-bottom: none;
+}
+
+/* --------------------------- Education & Experience --------------------------- */
+.education-content {
+  padding: 80px 0;
+}
+
+.education-content .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.education,
+.internship {
+  flex: 1 1 300px;
+}
+
+.education-content .title {
+  color: #fed700;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.timeline-box {
+  margin-top: 10px;
+}
+
+.timeline {
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.timeline-item {
+  padding-left: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #fed700;
+}
+
+.circle-dot {
+  width: 14px;
+  height: 14px;
+  background: #fed700;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.timeline-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.timeline-title i {
+  margin-right: 6px;
+}
+
+.timeline-text {
+  font-size: 15px;
+  color: #ccc;
+  text-align: justify;
+}
+
+/* --------------------------- Projects --------------------------- */
+.project-content {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.project-title h4 {
+  font-size: 36px;
+  color: #fed700;
+  margin-bottom: 10px;
+}
+
+.project-title p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  flex: 1 1 280px;
+  padding: 25px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  max-width: 350px;
+}
+
+.project:hover {
+  border-color: #fed700;
+  transform: translateY(-5px);
+}
+
+.project i {
+  background: #fed700;
+  color: #202020;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.project h4 {
+  margin-bottom: 8px;
+}
+
+.project p {
+  font-size: 15px;
+  color: #ddd;
+  text-align: justify;
+}
+
+/* --------------------------- Contact --------------------------- */
+.contact-content {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-title h4 {
+  font-size: 32px;
+  color: #fed700;
+  margin-bottom: 10px;
+}
+
+.contact-title p {
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.contact {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact form {
+  width: 100%;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.contact textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Auto-resize textarea: hides native scrollbar and disables manual resize for JS-controlled resizing */
+.contact textarea.auto-resize {
+  min-height: 120px;
+  overflow: hidden;
+  resize: none;
+}
+
+.submit {
+  background: #fed700;
+  color: #202020;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  transform: scale(1.05);
+}
+
+#msg {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #9fe29f;
+}
+
+/* --------------------------- Footer --------------------------- */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+}
+
+.footer .message {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* --------------------------- Responsive --------------------------- */
+@media (max-width: 991px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .education-content .row {
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #202020;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* This class can be toggled by JS to open menu */
+  .navbar.active {
+    display: flex;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .FirstElement {
+    padding: 3rem 0;
+  }
+}
